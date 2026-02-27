@@ -1,6 +1,6 @@
 {
   "name": "@tardiq/dev-config",
-  "version": "0.0.0-development",
+  "version": "0.1.0-alpha.0",
   "description": "Shared linting, formatting, and editor configuration for all Tardiq packages",
   "type": "module",
   "engines": {
