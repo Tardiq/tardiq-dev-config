@@ -1,0 +1,54 @@
+{
+  "name": "@tardiq/dev-config",
+  "version": "0.0.0-development",
+  "description": "Shared linting, formatting, and editor configuration for all Tardiq packages",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "exports": {
+    "./eslint/base": "./eslint/base.js",
+    "./eslint/node": "./eslint/node.js",
+    "./eslint/vue": "./eslint/vue.js",
+    "./prettier": "./prettier/index.js",
+    "./tsconfig/base.json": "./tsconfig/base.json",
+    "./tsconfig/node.json": "./tsconfig/node.json",
+    "./tsconfig/vue.json": "./tsconfig/vue.json",
+    "./commitlint": "./commitlint/index.js"
+  },
+  "files": [
+    "eslint/",
+    "prettier/",
+    "tsconfig/",
+    "commitlint/",
+    ".vscode/",
+    "prettier.config.js",
+    "commitlint.config.js"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "eslint": "^10.0.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.0.0",
+    "@commitlint/cli": "^20.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@commitlint/cli": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "@commitlint/config-conventional": "^20.4.2",
+    "eslint-plugin-vue": "^10.8.0",
+    "typescript-eslint": "^8.56.1",
+    "vue-eslint-parser": "^10.4.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^20.4.2",
+    "eslint": "^10.0.2",
+    "prettier": "^3.8.1",
+    "typescript": "^5.9.3"
+  }
+}
