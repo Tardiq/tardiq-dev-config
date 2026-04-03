@@ -23,17 +23,23 @@
     "commitlint/",
     ".vscode/",
     "prettier.config.js",
-    "commitlint.config.js"
+    "commitlint.config.js",
+    "README.md"
   ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tardiq/tardiq-dev-config.git"
+  },
   "publishConfig": {
     "access": "public",
     "registry": "https://npm.pkg.github.com"
   },
   "peerDependencies": {
+    "@commitlint/cli": "^20.0.0",
     "eslint": "^10.0.0",
     "prettier": "^3.0.0",
-    "typescript": "^5.0.0",
-    "@commitlint/cli": "^20.0.0"
+    "typescript": "^5.0.0 || ^6.0.0"
   },
   "peerDependenciesMeta": {
     "@commitlint/cli": {
@@ -41,15 +47,15 @@
     }
   },
   "dependencies": {
-    "@commitlint/config-conventional": "^20.4.2",
+    "@commitlint/config-conventional": "^20.5.0",
     "eslint-plugin-vue": "^10.8.0",
-    "typescript-eslint": "^8.56.1",
+    "typescript-eslint": "^8.58.0",
     "vue-eslint-parser": "^10.4.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^20.4.2",
-    "eslint": "^10.0.2",
+    "@commitlint/cli": "^20.5.0",
+    "eslint": "^10.1.0",
     "prettier": "^3.8.1",
-    "typescript": "^5.9.3"
+    "typescript": "^6.0.2"
   }
 }
