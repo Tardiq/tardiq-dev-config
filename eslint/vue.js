@@ -1,10 +1,10 @@
-import { defineConfig } from "eslint"
 import tseslint from "typescript-eslint"
 import vuePlugin from "eslint-plugin-vue"
 import vueParser from "vue-eslint-parser"
 import base from "./base.js"
 
-export default defineConfig(
+/** @type {import("eslint").Linter.Config[]} */
+export default [
   ...base,
   ...vuePlugin.configs["flat/recommended"],
 
@@ -21,4 +21,4 @@ export default defineConfig(
       "vue/multi-word-component-names": "off",
     },
   },
-)
+]

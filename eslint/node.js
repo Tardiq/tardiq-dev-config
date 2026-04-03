@@ -1,7 +1,7 @@
-import { defineConfig } from "eslint"
 import base from "./base.js"
 
-export default defineConfig(
+/** @type {import("eslint").Linter.Config[]} */
+export default [
   ...base,
 
   {
@@ -9,4 +9,4 @@ export default defineConfig(
       "no-console": "off",
     },
   },
-)
+]

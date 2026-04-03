@@ -1,7 +1,7 @@
-import { defineConfig } from "eslint"
 import tseslint from "typescript-eslint"
 
-export default defineConfig(
+/** @type {import("eslint").Linter.Config[]} */
+export default [
   ...tseslint.configs.strictTypeChecked,
 
   {
@@ -23,4 +23,4 @@ export default defineConfig(
       "no-console": "warn",
     },
   },
-)
+]
